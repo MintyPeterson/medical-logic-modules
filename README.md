@@ -1,5 +1,5 @@
 ## Medical logic modules
-A collection of medical logic modules (MLMs) for healthcare systems.
+A collection of medical logic modules (MLMs) for healthcare systems. These MLMs were written against [Allscripts Sunrise™](https://uk.allscripts.com/solution/sunrise-epr).
 
 ### Adren Syntax
 
