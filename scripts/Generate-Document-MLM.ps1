@@ -86,10 +86,12 @@ if (![string]::IsNullOrWhiteSpace($namePrefix)) {
   $namePrefix = $namePrefix + '_'
 }
 
-[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUserDeclaredVarsMoreThanAssignments', '')]
+[Diagnostics.CodeAnalysis.SuppressMessageAttribute(
+  'PSUserDeclaredVarsMoreThanAssignments', 'Name is used in ExpandString.')]
 $name = ('doc_' + $namePrefix + $title).Replace(' ', '_').ToLower()
 
-[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUserDeclaredVarsMoreThanAssignments', '')]
+[Diagnostics.CodeAnalysis.SuppressMessageAttribute(
+  'PSUserDeclaredVarsMoreThanAssignments', 'Date is used in ExpandString.')]
 $date = [DateTime]::Today.ToString('yyyy-MM-dd')
 
 $purpose = Convert-Line-To-Paragraph $purpose
