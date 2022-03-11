@@ -48,7 +48,7 @@ function Convert-Line-To-Paragraph($line) {
     if ($lastSpace -eq -1) {
       $lastSpace = $lineLengthLimit
     }
-    $paragraph += $line.Substring(0, $lastSpace).Trim() + '`r`n`t`t'
+    $paragraph += $line.Substring(0, $lastSpace).Trim() + "`r`n`t`t"
     $line = $line.Substring($lastSpace)
   }
 
