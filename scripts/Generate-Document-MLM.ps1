@@ -58,8 +58,8 @@ function Convert-Line-To-Paragraph($line) {
 }
 
 # Read the inputs.
-$documentName = Get-Input 'Document name'
-$trigger = Get-Input 'Trigger'
+$document = Get-Input 'Document'
+$function = Get-Input 'Function'
 $purpose = Get-Input 'Purpose'
 $explanation = Get-Input 'Explanation'
 
@@ -80,7 +80,7 @@ $author = Get-Input 'Author' $defaultAuthor
 $specialist = Get-Input 'Specialist' $defaultSpecialist
 
 # Build the outputs.
-$title = (Get-Culture).TextInfo.ToTitleCase($documentName + ' ' + $trigger)
+$title = (Get-Culture).TextInfo.ToTitleCase($document + ' ' + $function)
 
 if (![string]::IsNullOrWhiteSpace($namePrefix)) {
   $namePrefix = $namePrefix + '_'
