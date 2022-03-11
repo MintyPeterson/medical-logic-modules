@@ -11,11 +11,11 @@ The [HL7 Arden Syntax group](http://www.hl7.org/special/Committees/arden/overvie
 
 The scripts directory contains interactive PowerShell scripts that can be used to generate MLM templates.
 
-| Script                  | Description                        |
-|-------------------------|------------------------------------|
-| `Generate-Document-MLM` | Generates a document MLM template. |
-| `Generate-Event-MLM`    | Generates an event MLM template    |
-| `Generate-Form-MLM`     | Generates a form MLM template.     |
+| Script | Description |
+|--------|-------------|
+| Generate-Document-MLM | Generates a document MLM template. |
+| Generate-Event-MLM | Generates an event MLM template |
+| Generate-Form-MLM | Generates a form MLM template. |
 
 ### Usage
 1. Run the script.
